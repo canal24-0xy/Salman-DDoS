@@ -1,4 +1,4 @@
-# CHECK IMPORT2
+# CHECK IMPORT
 try:
     import socket
     import threading
