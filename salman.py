@@ -48,12 +48,12 @@ def get_user_input():
 def display_input_summary(target_ip, target_port, attack_time, packet, thread_count, method):
     display_header()  # Show the banner again
     print(" +======================================================+")
-    print(f" | Target IP : {target_ip:<40}|")
-    print(f" | Target Port : {target_port:<40}|")
-    print(f" | Time : {attack_time:<40}|")
-    print(f" | Packet : {packet:<45}|")
-    print(f" | Thread : {thread_count:<45}|")
-    print(f" | Method (UDP/TCP & UDP Mix) : {method:<25}|")
+    print(f" \033[0;37m| Target IP : \033[1;32m{target_ip:<40}|")
+    print(f" \033[0;34m| Target Port : \033[1;33m{target_port:<40}|")
+    print(f" \033[0;36m| Time : \033[0;33m{attack_time:<40}|")
+    print(f" \033[0;33m| Packet : \033[0;36m{packet:<45}|")
+    print(f" \033[1;33| Thread : \033[0;34m{thread_count:<45}|")
+    print(f" \033[1;32| Method (UDP/TCP & UDP Mix) : \033[0;37m{method:<25}|")
     print(" ========================================================")
 
 # UDP attack function
