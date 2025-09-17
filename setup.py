@@ -6,14 +6,14 @@ c = input(">>>: ")
 if c == "0":
     os.system("apt install python")
     os.system("apt install python2")
-    os.system("apt-get install python3")
+    os.system("pip install display_header")
     os.system("git pull")
    
 
 elif c == "1":
     os.system("apt install python")
     os.system("apt install python2")
-    os.system("apt-get install python3")
+    os.system("pip3 install display_header")
     os.system("git pull")
    
    
