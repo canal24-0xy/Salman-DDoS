@@ -57,7 +57,7 @@ def get_user_input():
     packet = input('\e[1;36 | Packet : \033[0m').strip()
     thread_count = input('\e[1;36 | Thread : \033[0m').strip()
     method = input('\e[1;36 | Method (UDP/TCP & UDP Mix) : \033[0m').strip().lower()
-    print(('e\1;35=======================================================\033[0m')
+    print('e\1;35=======================================================\033[0m')
 
     return target_ip, int(target_port), int(attack_time), int(packet), int(thread_count), method
 
