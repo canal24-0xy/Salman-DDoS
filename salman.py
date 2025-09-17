@@ -34,12 +34,12 @@ print("033\033[1;34m════════════════════
 # Prompt user for input
 def get_user_input():
     print("\033[1;35+======================================================\033[0m")
-    target_ip = input('\e[1;36m | Target IP : \033[0m').strip()
-    target_port = input('\e[1;36 | Target Port : \033[0m').strip()
-    attack_time = input('\e[1;36 | Time (seconds) : \033[0m').strip()
-    packet = input('\e[1;36 | Packet : \033[0m').strip()
-    thread_count = input('\e[1;36 | Thread : \033[0m').strip()
-    method = input('\e[1;36 | Method (UDP/TCP & UDP Mix) : \033[0m').strip().lower()
+    target_ip = input("\033[0;37m | Target IP : \033[1;32m").strip()
+    target_port = input("\033[0;34m | Target Port : \033[1;33m").strip()
+    attack_time = input("\033[0;36m | Time (seconds) : \033[0;33m").strip()
+    packet = input("\033[0;33m | Packet : \033[0;36m").strip()
+    thread_count = input("\033[1;33m | Thread : \033[0;34m").strip()
+    method = input("\033[1;32m | Method (UDP/TCP & UDP Mix) : \033[0;37m").strip().lower()
     print("\033[1;35=======================================================\033[0m")
 
     return target_ip, int(target_port), int(attack_time), int(packet), int(thread_count), method
