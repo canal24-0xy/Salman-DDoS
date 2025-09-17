@@ -49,7 +49,7 @@ def display_header():
 # Prompt user for input
 def get_user_input():
     print("\033[33m+======================================================\033[0m")
-    target_ip = input("\033[32m | Target IP : \033[0m").strip()
+    target_ip = input(  | Target IP : \033[0m").strip()
     target_port = input("\033[31m | Target Port : \033[0m").strip()
     attack_time = input("\033[33m | Time (seconds) : \033[0m").strip()
     packet = input("\033[33m | Packet : \033[0m").strip()
